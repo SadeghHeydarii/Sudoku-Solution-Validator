@@ -28,8 +28,8 @@ It checks whether the Sudoku board satisfies the game's rules across rows, colum
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/multithreaded-sudoku-validator.git
-cd multithreaded-sudoku-validator
+git clone https://github.com/your-username/Sudoku-Solution-Validator
+cd Sudoku-Solution-Validator
 ```
 
 ### 2. Compile the program:
