@@ -66,9 +66,8 @@ void* check_box(void* arg) {
 int main() {
     const int NUM_THREADS = 11;
     pthread_t threads[NUM_THREADS];
-    int indices[9]; // آرایه‌ی جدا برای شماره مربع‌ها
+    int indices[9]; 
 
-    // مقداردهی ماتریس
     for (int i = 0; i < 9; i++) {
         for (int j = 0; j < 9; j++) {
             cin >> arr[i][j];
@@ -81,7 +80,7 @@ int main() {
     pthread_create(&threads[1], NULL, check_rows, NULL);
 
     for (int i = 0; i < 9; i++) {
-        indices[i] = i; // مقداردهی جدا
+        indices[i] = i;
         pthread_create(&threads[i+2], NULL, check_box, (void*)&indices[i]);
     }
 
